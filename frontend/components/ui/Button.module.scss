@@ -1,0 +1,87 @@
+@import "../../styles/colors";
+@import "../../styles/typography";
+
+/* Buttons */
+.button {
+	border: 2px solid $brand-main-accent;
+	border-radius: 8px;
+	color: #fff;
+	background: $brand-main;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+	outline: none;
+	line-height: inherit;
+	padding: 0.75em 1em;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+	width: 100%;
+
+	&:hover {
+		color: $brand-main;
+		border: 2px solid $brand-main;
+		background: #fff;
+	}
+
+	&:active,
+	&:focus {
+		border: 2px solid $brand-main;
+	}
+}
+
+.add {
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	padding: 0.5em 1em;
+	width: fit-content;
+	cursor: pointer;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	transition: all 100ms ease-in-out;
+
+	.plus {
+		color: #fff;
+		border: 1px solid black;
+		background: $brand-main;
+		border-radius: 1em;
+		line-height: 1em;
+		display: inline-flex;
+		padding: 0.2em;
+		margin: 0 0 0 1em;
+		width: 1em;
+		height: 1em;
+		font-weight: 600;
+		font-size: 1.4em;
+		justify-content: center;
+		transition: all 100ms ease-in-out;
+	}
+
+	&:hover {
+		color: $brand-main;
+		background: rgba(46, 35, 111, 0.1);
+
+		.plus {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.save {
+	border: 1px solid #e5e5e5;
+	border-radius: 1em;
+	padding: 0.5em 1em;
+	width: fit-content;
+	cursor: pointer;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	transition: all 100ms ease-in-out;
+
+	&:hover {
+		color: $brand-main;
+		background: rgba(46, 35, 111, 0.1);
+	}
+}

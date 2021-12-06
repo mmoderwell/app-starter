@@ -1,0 +1,22 @@
+.heading {
+	max-width: 20em;
+	margin: 0 auto;
+	text-align: center;
+	padding: 16vh 0 0 0;
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+.container {
+	max-width: 40em;
+	margin: 10vh auto;
+	position: relative;
+
+	img {
+		display: block;
+		width: 20em;
+		vertical-align: middle;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

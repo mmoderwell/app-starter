@@ -1,0 +1,36 @@
+.main {
+	margin: 0 auto;
+	padding: 0 4em;
+	max-width: 80em;
+	width: -webkit-fill-available;
+	flex: 1 1;
+
+	@media (max-width: 48em) {
+		margin: 0 4vw;
+		padding: 0;
+	}
+}
+
+.wide {
+	margin: 2em 0;
+	padding: 0;
+	width: -webkit-fill-available;
+	flex: 1;
+
+	@media (max-width: 48em) {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.centered {
+	margin: 2em auto;
+	padding: 0 4em;
+	max-width: 80em;
+	flex: 1;
+
+	@media (max-width: 48em) {
+		margin: 0 4vw;
+		padding: 0;
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"useTabs": true,
+	"tabWidth": 2,
+	"jsxBracketSameLine": true,
+	"htmlWhitespaceSensitivity": "strict",
+	"printWidth": 100
+}

@@ -1,0 +1,35 @@
+@import "../styles/colors.scss";
+
+.error {
+	color: #d25858;
+	margin-top: 0;
+	font-weight: 600;
+	background: #fdd7d4;
+	width: fit-content;
+	padding: 0.5em 1em;
+	border-radius: 4px;
+
+	img {
+		fill: inherit;
+		display: inline-block;
+		max-width: 1em;
+		padding-right: 0.5em;
+	}
+}
+
+.success {
+	color: green;
+	margin-top: 0;
+	font-weight: 600;
+	background: #d4fde4;
+	width: fit-content;
+	padding: 0.5em 1em;
+	border-radius: 4px;
+
+	img {
+		fill: inherit;
+		display: inline-block;
+		max-width: 1em;
+		padding-right: 0.5em;
+	}
+}

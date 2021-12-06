@@ -1,0 +1,12 @@
+$landscape-width: 20%;
+$portrait-width: 70vw;
+$secs: 0.2s;
+
+.sidebar {
+	.items {
+		padding: 0;
+		.tab {
+			list-style: none;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@import "../../styles/colors";
+
+.error {
+	color: $error;
+}
+
+.success {
+	color: $success;
+}
+
+.success,
+.error {
+	fill: none;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+
+	img,
+	svg {
+		width: 1em;
+		height: 1em;
+		padding-right: 0.5em;
+	}
+}
+
+.messages {
+	font-size: 0.9em;
+	height: 3em;
+	display: flex;
+	align-items: center;
+}

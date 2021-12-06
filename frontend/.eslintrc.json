@@ -1,0 +1,42 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"next",
+		"plugin:react/recommended",
+		"plugin:tailwindcss/recommended",
+		"airbnb",
+		"prettier"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "tailwindcss"],
+	"rules": {
+		"react/react-in-jsx-scope": "off"
+		// allow jsx syntax in js files (for next.js project)
+	},
+	"settings": {
+		"tailwindcss": {
+			// These are the default values but feel free to customize
+			"callees": ["classnames", "clsx", "ctl"],
+			"config": "tailwind.config.js",
+			"cssFiles": ["**/*.css", "!**/node_modules"],
+			"groupByResponsive": false,
+			"prependCustom": false,
+			"removeDuplicates": true,
+			"whitelist": []
+		}
+	}
+}

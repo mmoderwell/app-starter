@@ -1,0 +1,75 @@
+@import "colors";
+/* Reusable Styles */ // Fonts
+.larger {
+	font-size: 1.2em;
+}
+
+.big {
+	font-size: 3em;
+}
+
+.pop {
+	font-weight: bold;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+// Spacing
+.no_margin {
+	margin: 0;
+}
+
+.centered {
+	text-align: center;
+}
+
+.in_block {
+	display: inline-block;
+}
+
+// Links
+.colored_link {
+	text-decoration: underline;
+	color: $brand-secondary;
+	cursor: pointer;
+}
+
+.colored_link:hover {
+	transition: opacity 0.1s ease;
+	opacity: 0.8;
+}
+
+.error {
+	color: #d25858;
+	margin-top: 0;
+	font-weight: 600;
+	fill: inherit;
+
+	img {
+		max-width: 1em;
+		padding-right: 0.5em;
+	}
+}
+
+.success {
+	color: #40ac61;
+	margin-top: 0;
+	font-weight: 600;
+	fill: inherit;
+
+	img {
+		max-width: 1em;
+		padding-right: 0.5em;
+	}
+}
+
+.form {
+	display: grid;
+	gap: 0.5em 0;
+}

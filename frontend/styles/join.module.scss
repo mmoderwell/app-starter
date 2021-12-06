@@ -1,0 +1,130 @@
+@import "colors";
+@import "components";
+
+.heading {
+	h1,
+	h2 {
+		margin: 0;
+	}
+}
+
+.info {
+	padding: 4em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.greeting {
+		h3 {
+			font-weight: 600;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.form {
+		max-width: 28em;
+		width: -webkit-fill-available;
+		border-radius: 8px;
+		padding: 2em;
+		box-shadow: $light-shadow;
+
+		.heading {
+			display: flex;
+			padding: 0 0 1em 0;
+			justify-content: center;
+
+			h2 {
+				font-size: 1em;
+			}
+
+			svg {
+				width: 1.5em;
+				height: 1.5em;
+				padding-right: 0.5em;
+			}
+		}
+
+		.birthday {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			border: 1px solid gray;
+			padding: 0rem 0.125rem 0.0625rem;
+			border-radius: 4px;
+
+			label {
+				padding-top: 0.25em;
+				// position: absolute;
+				text-indent: 0.5em;
+				pointer-events: none;
+				color: #bbb;
+				font-size: 1em;
+				font-weight: normal;
+				-webkit-transition: all 0.28s ease;
+				transition: all 0.28s ease;
+			}
+			.picker {
+				outline: none;
+				border: none;
+				padding: 0.5em;
+				width: 90%;
+			}
+
+			&:focus,
+			&:focus-visible {
+				border: 2px solid purple;
+			}
+		}
+
+		.legal {
+			font-size: 0.9em;
+			margin: 1em 0.5em;
+		}
+	}
+
+	.right {
+		.additional {
+			padding: 4em 0;
+
+			.account_feature {
+				.green_check {
+					padding-right: 0.4em;
+					color: #19a16b;
+				}
+			}
+		}
+	}
+
+	.redirect {
+		font-size: 0.9em;
+		display: flex;
+		align-items: center;
+
+		a {
+			padding-left: 0.25em;
+			font-weight: 600;
+		}
+	}
+
+	@media (max-width: 64em) {
+		gap: 2em;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+
+		.greeting {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+.requirements {
+	font-size: 0.9em;
+	ul {
+		list-style: none;
+		padding: 0 0 0 0em;
+	}
+}

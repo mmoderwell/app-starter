@@ -1,0 +1,44 @@
+@import "./colors", "./components";
+
+.content {
+	padding: 4em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.login {
+		max-width: 28em;
+		width: -webkit-fill-available;
+		border-radius: 8px;
+		padding: 2em;
+		box-shadow: $light-shadow;
+
+		.heading {
+			display: flex;
+			padding: 0 0 1em 0;
+			justify-content: center;
+
+			h2 {
+				margin: 0;
+				font-size: 1em;
+			}
+
+			svg {
+				width: 1.5em;
+				height: 1.5em;
+				padding-right: 0.5em;
+			}
+		}
+	}
+
+	.redirect {
+		font-size: 0.9em;
+		display: flex;
+		align-items: center;
+
+		a {
+			padding-left: 0.25em;
+			font-weight: 600;
+		}
+	}
+}
